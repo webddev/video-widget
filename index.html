@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="widget.css">
+    <title>Widget</title>
+</head>
+<body>
+<div class="widget hover-translate">
+    <div class="widget__body">
+        <video autoplay muted loop controls class="widget-video">
+            <source src="img/widget.mp4" type="video/mp4">
+        </video>
+        <div class="widget__controls">
+            <button class="close-video-btn"></button>
+        </div>
+        <button class="open-form-btn button">Оставить заявку</button>
+        <div class="widget__form-block">
+            <div class="widget__title">Оставьте заявку и мы вам перезвоним</div>
+            <form class="widget__form">
+                <input type="hidden" name="comment">
+                <input type="text" name="name" class="widget__input" placeholder="Имя">
+                <input type="tel" name="phone" class="widget__input" placeholder="+7(___)___-__-__" required>
+                <input type="email" name="email" class="widget__input" placeholder="Email">
+                <button type="submit" class="button form-button">Отправить</button>
+                <div class="close-widget-form">Отменить</div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+<script src="widget.js"></script>
+</html>
